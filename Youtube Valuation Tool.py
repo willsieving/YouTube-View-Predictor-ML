@@ -71,7 +71,7 @@ def get_log_estimate(likes=None,
                     dislikes=None,
                     comments=None,
                     high_confidence=True):
-    # Configure property stats (use average or not)
+    # Configure video stats (use average or not)
     if likes:
         video_stats[0][LIKES_IDX] = likes
     else:
@@ -87,7 +87,7 @@ def get_log_estimate(likes=None,
     else:
         pass
         
-    # Make Prediction using Property Stats
+    # Make Prediction using Video Stats
     log_estimate = regr.predict(video_stats)[0][0]
     
     # Calculate the Range
@@ -138,12 +138,12 @@ def get_views_estimate(vid_likes, vid_dislikes, vid_comments, large_range=True):
                                                    comments = np.log(vid_comments),
                                                    high_confidence = large_range)
 
-    # Convert to todays dollars
+    # Convert to normal views (non-log)
     views_est = np.e**log_est
     views_hi = np.e**upper
     views_low = np.e**lower
 
-    # Round the dollar values to nearest thousand
+    # Round the views
     rounded_est = np.around(views_est, -3)
     rounded_hi = np.around(views_hi, -3)
     rounded_low = np.around(views_low, -3)
@@ -156,24 +156,19 @@ def get_views_estimate(vid_likes, vid_dislikes, vid_comments, large_range=True):
 
 # In[43]:
 
-
+# Actual: 12,592,175
 get_views_estimate(vid_likes=1304199, vid_dislikes=12898, vid_comments=68051)
 
 
 # In[45]:
 
-
+# Actual: 1,236,437
 get_views_estimate(vid_likes=82180, vid_dislikes=1841, vid_comments=3510)
 
 
 # In[46]:
 
-
+# Actual: 440,668
 get_views_estimate(vid_likes=23630, vid_dislikes=860, vid_comments=2733)
-
-
-# In[ ]:
-
-
 
 
