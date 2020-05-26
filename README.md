@@ -19,5 +19,5 @@ Things to think on:
 How to Use:
 - Download 'Youtube Valuation Tool' and 'youtube.csv' into your directory
 - Make sure the proper modules are installed
-- import 'get_views_estimate' into your project
+- import 'get_views_estimate()' into your project
 - Read docstring for arguments
