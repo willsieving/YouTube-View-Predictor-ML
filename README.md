@@ -13,3 +13,9 @@ Things to think on:
 - Use more data, such as subscriber count and number of videos on channel
 - Generalizing all videos on YouTube is impossible, not all videos are equal
 - Works better with more mainstream videos, such as the Trending section
+
+How to Use:
+- Download 'Youtube Valuation Tool' and 'youtube.csv' into your directory
+- Make sure the proper modules are installed
+- import 'get_views_estimate' into your project
+- Read docstring for arguments
