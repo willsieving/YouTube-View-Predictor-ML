@@ -10,10 +10,10 @@ It can predict the views but not as accurately as I'd like.
 With a range to cover 2σ (95% coverage) the actual views is always near the lower bound
 
 Things to think on:
-- Use more data, such as subscriber count and number of videos on channel
-- Generalizing all videos on YouTube is impossible, not all videos are equal
-- Works better with more mainstream videos, such as the Trending section, and older videos
-- Works best with mainstream older videos (a few years old)
+- Use more data, such as subscriber count and number of videos on channel.
+- Generalizing all videos on YouTube is difficult, not all videos are equal.
+- The model works better with more mainstream videos, such as the Trending section, and older videos.
+- The model works best with mainstream older videos (a few years old)
 - More testing needs to be done.
 
 How to Use:
