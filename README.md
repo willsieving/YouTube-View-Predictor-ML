@@ -12,7 +12,8 @@ With a range to cover 2σ (95% coverage) the actual views is always near the low
 Things to think on:
 - Use more data, such as subscriber count and number of videos on channel
 - Generalizing all videos on YouTube is impossible, not all videos are equal
-- Works better with more mainstream videos, such as the Trending section
+- Works better with more mainstream videos, such as the Trending section, and older videos
+- Works best with mainstream older videos (a few years old)
 
 How to Use:
 - Download 'Youtube Valuation Tool' and 'youtube.csv' into your directory
