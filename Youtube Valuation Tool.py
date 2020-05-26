@@ -19,7 +19,7 @@ np.set_printoptions(suppress=True)
 
 data = pd.read_csv('youtube.csv')
 
-data2 = data.sample(frac=.5).reset_index(drop=True)
+data2 = data.sample(frac=1).reset_index(drop=True)
 # frac = the fraction of values to put into the returned dataframe (100% of values, randomly suffled, with indexes from 1-end)
 # Removing Values from Views
 data3 = data2[data2.views != 0]
