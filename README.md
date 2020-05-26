@@ -14,6 +14,7 @@ Things to think on:
 - Generalizing all videos on YouTube is impossible, not all videos are equal
 - Works better with more mainstream videos, such as the Trending section, and older videos
 - Works best with mainstream older videos (a few years old)
+- More testing needs to be done.
 
 How to Use:
 - Download 'Youtube Valuation Tool' and 'youtube.csv' into your directory
