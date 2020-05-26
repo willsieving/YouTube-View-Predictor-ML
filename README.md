@@ -1,7 +1,7 @@
 YouTube-View-Predictor-ML
 
 This project was an attempt to create a Multiple Variable Linear Regression algorithm
-that predicts the views on a YouTube video give the Likes, Dislikes, and Comments
+that predicts the views on a YouTube video given the Likes, Dislikes, and Comments
 
 Data was taken from over 600 YouTube channels to train the model.
 This project was partially successful.
